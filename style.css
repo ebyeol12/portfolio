@@ -1,0 +1,266 @@
+.slide{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.slide .allbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide .allbox .box{
+    height: 100%;
+}
+
+main .new_shoes {
+    width: 84.4%;
+    margin: 200px auto;
+}
+main .new_shoes > h2{
+    margin-bottom: 50px;
+}
+main .new_shoes .newbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .new_shoes .newbox .text{
+    text-align: center;
+}
+main .new_shoes .newbox .text > h2{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+main .new_shoes .newbox .text button{
+    padding: 10px 50px;
+    margin-top: 45px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+main .category{
+    margin: 200px auto;
+    width: 84.4%;
+}
+main .category h2{
+    margin-bottom: 20px;
+}
+main .category .all_shop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main .category .all_shop .box{
+    width: 30.7%;
+}
+main .category .all_shop .img{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+main .category .all_shop .img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main h1{
+    text-align: center;
+}
+
+main .brand{
+    width: 84.4%;
+    margin: auto;
+}
+main .brand h2{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+main .all_brand_wrap {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+main .all_brand{
+    display: flex;
+    gap: 0 40px;
+    text-align: center;
+    animation: slidebox 30s infinite linear;
+}
+main .all_brand .box{
+    width: 500px;
+    flex-shrink: 0;
+}
+main .all_brand .box p{
+    margin-top: 20px;
+}
+@keyframes slidebox {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+main .all_brand .img{
+    /* width: 500px; */
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+main .all_brand .img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main .best{
+    width: 84.4%;
+    margin: 200px auto;
+}
+main .best h2{
+    margin-bottom: 50px;
+}
+main .best .all_best{
+    width: 100%;
+    /* height: 700px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+main .best .all_best .bestleft{
+    width: 32.1%;
+}
+main .best .all_best .bestleft img{
+    height: 700px;
+}
+main .best .all_best .bestright{
+    width: 65.80%;
+    display: flex;
+    flex-direction: column;
+}
+main .best .all_best .bestright .besttop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+main .best .all_best .bestright .bestbtm{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 30px 0;
+}
+main .best .all_best .bestright .bestbtm .box{
+    width: 23.45%;
+}
+main .best .all_best .bestright .bestbtm .img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+main .best .all_best .bestright .bestbtm .img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main .best .all_best .bestright .bestbtm p{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1024px){
+    .slide{
+        height: 450px;
+    }
+    main .new_shoes{
+        margin: 100px auto;
+    }
+    main .new_shoes .newbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main .new_shoes .newbox .text{
+        padding: 30px;
+    }
+    main .new_shoes .newbox .text > h4{
+        font-size: 30px;
+    }
+    main .new_shoes .newbox .text > h2{
+        font-size: 45px;
+    }
+    main .category .all_shop{
+        display: flex;
+        flex-direction: column;
+    }
+    main .category .all_shop img{
+        width: 100%;
+    }
+    main .category{
+        margin: 100px auto;
+    }
+    main .brand h2{
+        margin-top: 100px;
+    }
+    main .best{
+        margin: 100px auto;
+    }
+    main .best .all_best{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    main .category .all_shop .box {
+        width: 100%;
+    }
+    main .category .all_shop .img{
+        height: 200px;
+    }
+    main .best .all_best .bestleft{
+        width: 100%;
+    }
+    main .best .all_best .bestleft img{
+        width: 100%;
+        height: auto;
+    }
+    main .best .all_best .bestright{
+        width: 100%;
+    }
+    main .best .all_best .bestright img{
+        width: 50%;
+        height: auto;
+    }
+    main .best .all_best .bestright .bestbtm{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    main .best .all_best .bestright .bestbtm .img{
+        width: 250px;
+        height: 250px;
+    }
+    main .best .all_best .bestright .bestbtm p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .slide{
+        height: 300px;
+    }
+    main .best .all_best .bestright .bestbtm .box{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    h1{
+        font-size: 64px;
+    }
+    main h2{
+        font-size: 40px;
+    }
+}

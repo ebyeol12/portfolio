@@ -1,0 +1,123 @@
+main{
+    width: 84.4%;
+    overflow: hidden;
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .contents{
+    width: 100px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main .contents img{
+    width: 100px;
+    height: 100px;
+}
+main .simg{
+    width: 49.3%;
+    height: 800px;
+    position: relative;
+}
+main .simg .shose{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main .simg .shose{
+    width: 800px;
+    height: 800px;
+}
+main .simg .shose:not(.sb){
+    display: none;
+}
+
+main .alltext{
+    width: 32.1%;
+    text-align: center;
+}
+main .alltext h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+main .alltext .allbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    
+}
+main .alltext .allbox .box{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    text-align: center;
+}
+main .alltext .allbox .box:hover{
+    background-color: #000;
+    color: #fff;
+}
+main .alltext .btn{
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .alltext .btn a:first-child{
+    border: 1px solid #000;
+    color: #000;
+}
+main .alltext .btn a:last-child{
+    background-color: #000;
+    color: #fff;
+}
+main .alltext .btn a{
+    display: block;
+    width: 245px;
+    height: 100%;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    main{
+        width: 78.125%;
+        margin: 100px auto;
+        flex-direction: column;
+    }
+    main .contents{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    main .simg {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+
+    }
+    main .simg .shose{
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    main .alltext{
+        width: 100%;
+    }
+    main .alltext .allbox{
+        width: 100%;
+    }
+    
+}

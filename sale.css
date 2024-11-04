@@ -1,0 +1,120 @@
+main .banner{
+    width: 100%;
+    height: 50vh;
+    background: url(../img/sale/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.contents{
+    width: 84.4%;
+    overflow: hidden;
+    margin: 200px auto;
+}
+.contents h3{
+    margin-bottom: 50px;
+}
+
+.contents .c_menu{
+    display: flex;
+    gap: 40px;
+}
+.contents .c_menu li{
+    font-size: 20px;
+}
+.contents .all{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px
+}
+.contents .all p{
+ margin-top: 12px;
+}
+.contents .all select{
+    padding: 10px 20px;
+    font-size: 16px
+}
+.contents .allbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contents .allbox .box{
+    width: 23.46%;
+}
+.contents .allbox .img{
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.contents .allbox .img img{
+    width: 100%;
+    /* height: 350px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contents .allbox .imgbox{
+    width: 49.1%;
+}
+.contents .allbox .imgbox img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+.contents .allbox .text{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.contents .allbox .text .sale_t {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contents .allbox .text .sale_t .color{
+    color: red;
+    margin-right: 25px;
+}
+.contents .allbox .text .sale_t .t{
+    text-decoration: line-through;
+    color: #9E9E9E;
+}
+@media screen and (max-width:768px){
+    main .banner{
+        height: 200px;
+    }
+    .contents{
+        margin: 100px auto;
+        width: 100%;
+        padding: 0 25px;
+    }
+    .contents .allbox .box{
+        width: 100%;
+    }
+    .contents .allbox .imgbox{
+        width: 100%;
+    }
+    .contents .allbox .img{
+        height: 350px;
+    }
+    .contents .c_menu{
+        gap: 16px;
+    }
+    .contents .c_menu li{
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media screen and (max-width:360px){
+    main .banner{
+        height: 100px;
+    }
+    .contents .allbox .box{
+        width: 100%;
+    }
+}

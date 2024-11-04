@@ -1,0 +1,41 @@
+/* reset */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit; /* 부모요소의 스타일 상속 */
+}
+img, video, iframe{
+    max-width: 100%; /* 반응형을 위한 최대크기 설정 */
+    display: block;
+}
+figure{
+    width: fit-content;
+    height: fit-content;
+}
+h1{
+    font-size: 96px;
+    font-weight: 900;
+}
+h2{
+    font-size: 64px;
+    font-weight: 900;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 32px;
+}
